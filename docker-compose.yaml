@@ -7,8 +7,8 @@ services:
     ports:
       - "3306:3306"
     environment:
-      - MYSQL_ROOT_PASSWORD = root
-      - TZ = Asia/Shanghai
+      - MARIADB_ROOT_PASSWORD=root
+      - TZ=Asia/Shanghai
     volumes:
       - ./.volumes/mysql/data:/var/lib/mysql/
       - ./.volumes/mysql/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
